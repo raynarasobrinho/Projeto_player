@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head> <!-- Cabeçalho -->
+		<title> Player Visual Ray</title>
+		<link rel="stylesheet" href="./style.css"> <!-- importa arquivo css -->
+        <script type="js" src="./javascript.js"></script>
+
+        <h1>Player Visual</h1>
+    
+	
+	</head>
+	<body>
+		<!-- Escolhendo o video -->
+	
+		<div id="video">
+		<video id="meuvideo" autoplay>
+				<source src=" " type="type="video/mp4">
+			<!--<track label="English" kind="subtitles" srclang="en" src="/legenda/legenda.vtt" default>-->
+				<track src="legenda/.vtt" kind="subtitles" srclang="en" label="English"><track>
+		</video>
+		<!-- Define os controles -->
+		<div id="controls">
+			<div id="progressoBarra"><span id="played" tabindex="2"></span></div>
+			<input id="barraTempo" type="range" min="0" max="100" value="0" step="1" />
+			<span id="tempoAtual">00:00:00</span> / <span id="tempoTotal">00:00:00</span>
+			<button id="playpause" alt="play" title="play" tabindex="1" onclick="PlayPause()" accesskey="p">Play/Pause</button>
+			<button id="stop" alt="stop" title="parar" tabindex="3" onclick="stopVideo()" accesskey="s">stop</button>
+			<button id="rewind" alt="rewind" title="retroceder" tabindex="4" onclick="MudaVelocidadePlayback('-');" accesskey="r">&laquo;</button>
+			<button id="ffwd" alt="fast forward" title="avançar" tabindex="5" onclick="MudaVelocidadePlayback('+');" accesskey="f">&raquo;</button>
+			<button id="volumeDown" alt="diminui volume" title="diminui" tabindex="6" onclick="MudaVolume('-')" accesskey="d">-</button>
+			<button id="volumeUp" alt="aumenta volume" title="aumenta" tabindex="7" onclick="MudaVolume('+')" accesskey="u">+</button>
+			<button id="mute" alt="mute" title="mute" tabindex="8" onclick="Mute()" accesskey="m">mute</button>
+		    <button id="fullscreenbtn">[ &nbsp; ]</button>
+			Legenda: <button id="btnLegenda" type="button">LIGADO</button>
+			
+
+		</div>
+		</div>
+		<p id="teste"></p>
+		</br>
+			<div class='statistics'>
+        <div class="lead text-center bg-info">
+          <h1>Estatisticas de reprodução</h1>
+
+                <tr>
+                    <td><span id="infoDuracao">Duração total:</span> </td>
+                    <td> <span id="infoTempoDuracao"></span><span class="segundosInfo">segundos</span></td>  </br>  
+                </tr>
+                 <tr>
+                    <td><span id="inforPosicaoAtual">Posição atual:</span></td>
+                    <td> <span id="infoTempoAtual"></span><span class="segundosInfo">segundos</span></td> </br>      
+                </tr>
+                  <tr>
+                    <td><span id="infoPosicaoPausa">Tempos em pausa: </span></td>
+                    <td> <span id="infoTempoPausa"></span></td>       
+                </tr>
+             
+
+             
+
+                
+            </table>
+			<div id="pausas"></div>
+</div>
+
+	</body>
+</html>

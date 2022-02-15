@@ -1,0 +1,51 @@
+
+		 body{font-family:Tahoma;}
+			span#tempoAtual{background:#fa4b2a; 
+			color:#fff;
+			border-radius:4px; 
+		    box-shadow: 2px 2px 2px #A4A4A4;
+		}
+		input {background:#990000; 
+		    color:#fff;
+			border-radius:4px; 
+		    box-shadow: 2px 2px 2px #A4A4A4;
+		}		
+		 button {background:#009933; 
+		    color:#fff;
+			border-radius:4px; 
+		    box-shadow: 2px 2px 2px #A4A4A4;
+		}		
+		div#video{ 
+			width: 800px; 
+			background: #813771; 
+			margin: 0px auto;
+		}		
+		div#controls{
+			background: #888585;
+			padding: 5px;
+			color: white;	
+		}
+		
+		video#meuvideo{
+			width: 800px; 			
+		}
+		input#barraTempo{ 
+			width: 200px;
+		}
+
+		input[type='range']{
+			-webkit-appearance: button;
+			background: #f0a127;
+			border: #666 1px solid;
+			height: 5px;
+		}
+		input[type='range']::-webkit-slider-thumb{
+			-webkit-appearance: button;
+			background: red;
+			height: 15px;
+			width: 15px;
+			border-radius: 100%;
+			cursor: pointer;
+		}
+
+		
